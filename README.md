@@ -13,7 +13,7 @@ script for calling an R script within python. https://github.com/mlco2/codecarbo
 
 ## Programs to compare: 
 \* Record – Number of SNPS/ Statistical Power vs Energy Usage and Carbon cost.  
-\*2 different GWAS exposure – GWAS for BMI (Locke ver Yengo). Both two-sample univariable and multivariable analysis. 
+\* 2 different GWAS exposure – GWAS for BMI (Locke ver Yengo). Both two-sample univariable and multivariable analysis. 
 \* Running MR with/without proxy look-up? Or using pre-clumped instruments from OpenGWAS versus clumping SNPs locally. 
 \* Colocalisation with/without Susie finemapping 
 \* Reading in data – packages/functions (data.table, tidyverse, etc), data formats, non-standard formats (comma separated, tab-separated, having to re-do, etc – carbon cost of a bad readme, also importance of reading in first few rows first versus entire file), transposing (R versus Python packages) 
@@ -33,7 +33,13 @@ script for calling an R script within python. https://github.com/mlco2/codecarbo
 
 ## Calculating your cost.
 Using the offline version of the emission tracker from codecarbon track the power usage and run time. 
+```
+import codecarbon as cc
+with cc.OfflineEmissionsTracker() as tracker():
+  # Your Code
+```
 
+### Save the cost
 ``
 import panda as pd
 carbon_dict={method_id:your_id,

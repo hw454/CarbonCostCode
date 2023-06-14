@@ -1,0 +1,14 @@
+method_id,n_snps,n_rows,package,cost,run_time,carbon_calculator
+dummy_test_00,300,,,20,50,Green_Algorithms
+dummy_test_01,2000,,,10,30,Green_Algorithms
+dummy_other_00,,400,,13,15,Green_Algorithms
+dummy_other_01,,300,,3,120,Green_Algorithms
+dummy_other_10,,,A,20,300,Code_Carbon
+dummy_other_11,,,B,15,400,Code_Carbon
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,

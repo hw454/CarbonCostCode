@@ -1,7 +1,9 @@
 # CarbonCostCode
 
-Repository for testing the carbon cost of codeing related to code used within the MRC-IEU. 
-Repository: https://github.com/hw454/GreenAlgorithmsIEU 
+Repository for testing the carbon cost of codeing related to code used within the MRC-IEU.
+**One Drive folder:** https://uob.sharepoint.com/:f:/r/teams/grp-ieu-dmer_prog/Shared%20Documents/Social/2023-06-15-prog3-away-day/away-day-hackathon/materials/GreenAlgorthims?csf=1&web=1&e=gyEdZy 
+This repository has been setup and developed as part of the IEU-Program3-AwayDay.
+**Participants:** Winfred Gatua, Maria Sobczyk-Barad, Emma Hazelwood, Olalekan Awoniran, and Hayley Wragg
 
 # Requirements
 ## Packages Used

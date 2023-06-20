@@ -14,24 +14,24 @@ However this has installation issues and does not allow for comparing domestic c
 script for calling an R script within python. https://github.com/mlco2/codecarbon  
 
 ## Programs to compare: 
-\* Record – Number of SNPS/ Statistical Power vs Energy Usage and Carbon cost.  
-\* 2 different GWAS exposure – GWAS for BMI (Locke ver Yengo). Both two-sample univariable and multivariable analysis. 
-\* Running MR with/without proxy look-up? Or using pre-clumped instruments from OpenGWAS versus clumping SNPs locally. 
-\* Colocalisation with/without Susie finemapping 
-\* Reading in data – packages/functions (data.table, tidyverse, etc), data formats, non-standard formats (comma separated, tab-separated, having to re-do, etc – carbon cost of a bad readme, also importance of reading in first few rows first versus entire file), transposing (R versus Python packages) 
-\* Chunk size in pandas 
+  * Record – Number of SNPS/ Statistical Power vs Energy Usage and Carbon cost.  
+  * 2 different GWAS exposure – GWAS for BMI (Locke ver Yengo). Both two-sample univariable and multivariable analysis. 
+  * Running MR with/without proxy look-up? Or using pre-clumped instruments from OpenGWAS versus clumping SNPs locally. 
+  * Colocalisation with/without Susie finemapping 
+  * Reading in data – packages/functions (data.table, tidyverse, etc), data formats, non-standard formats (comma separated, tab-separated, having to re-do, etc – carbon cost of a bad readme, also importance of reading in first few rows first versus entire file), transposing (R versus Python packages) 
+ * Chunk size in pandas 
 
 # Setup
  To calculate the cost of a single program populate a csv named: `method_id.csv`. The name for your csv should be added to the INSERT_FILENAME file. 
  If the method is already in the list match the `method_id` otherwise add a new row. 
  
 #### Inside the setup csv populate:
-\* method_id (should all be unique) 
-\* n_snps (for MRs) 
-\* n_rows (for reading data) 
-\* n_chunk_size 
-\* package (for reading data) 
-\* carbon_calculator 
+  * method_id (should all be unique) 
+  * n_snps (for MRs) 
+  * n_rows (for reading data) 
+  * n_chunk_size 
+  * package (for reading data) 
+  * carbon_calculator 
 
 ## Calculating your cost.
 Using the offline version of the emission tracker from codecarbon track the power usage and run time. 

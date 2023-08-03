@@ -42,7 +42,7 @@ with cc.OfflineEmissionsTracker() as tracker():
 ```
 
 ### Save the cost
-``
+```
 import panda as pd
 carbon_dict={method_id:your_id,
               n_snps:your_nsnps,
@@ -54,7 +54,7 @@ carbon_dict={method_id:your_id,
               run_time:your_time}
   res_df=pd.Dataframe(carbon_dict)
   res_df.to_csv(results_file_name)
-  ``
+  ```
 
 
  
